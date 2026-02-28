@@ -1,4 +1,4 @@
-27244723876656941
+27246496212421059
 1_Buzzers
 Buzzer_D30mm_H20mm_P15mm_668-1652-ND_AI-3035-TT-12V-R
 
@@ -6,6 +6,13 @@ Buzzer_D30mm_H20mm_P15mm_668-1652-ND_AI-3035-TT-12V-R
 0
 2
 2
+390B_Footprint_Library
+28P3_SPDIP28_SP_MCH
+
+ATMEGA328-PU 
+0
+28
+28
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)

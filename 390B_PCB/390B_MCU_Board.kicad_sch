@@ -5779,7 +5779,7 @@
 				)
 			)
 		)
-		(property "Footprint" "28P3_SPDIP28_SP_MCH"
+		(property "Footprint" "390B_Footprint_Library:28P3_SPDIP28_SP_MCH"
 			(at 111.76 165.1 0)
 			(effects
 				(font
