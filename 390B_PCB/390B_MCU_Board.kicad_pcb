@@ -108,13 +108,13 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "2b81be0d-edd5-4c1d-bd9c-4f57db300101")
-		(at 138.81 89.74)
+		(at 121.81 93.96 -90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C5"
-			(at 1 -3.75 0)
+			(at 0.86 -1.61 90)
 			(layer "F.SilkS")
-			(uuid "e80eec07-b84d-419c-a51e-146ab7fad466")
+			(uuid "c45583a1-a617-41bf-8e21-00c5ec5ba237")
 			(effects
 				(font
 					(size 1 1)
@@ -123,9 +123,9 @@
 			)
 		)
 		(property "Value" ".1uF"
-			(at 1 3.75 0)
+			(at 1.09 1.6 90)
 			(layer "F.Fab")
-			(uuid "2b8f7c29-ab5f-4bff-bbe5-29243d61061d")
+			(uuid "1725f37c-53db-4560-af07-340d2eb130bf")
 			(effects
 				(font
 					(size 1 1)
@@ -134,10 +134,10 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "962ec150-e1d9-48e9-b0c5-f33986a2a22b")
+			(uuid "d96a1bc6-92bb-476a-a5ae-0acca85a5d5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -146,10 +146,10 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c84d720d-49e3-470f-81b2-df9a2e6958cc")
+			(uuid "b082e131-adc3-479f-979d-61897b265159")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -196,7 +196,7 @@
 			(uuid "df619782-0c44-43c0-b9e9-0c1ab90b2394")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "d0f48d03-83ce-49fe-9b49-afeeb8f09b6b")
 			(effects
@@ -207,7 +207,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -217,7 +217,7 @@
 			(uuid "dd60702f-bc7e-4f0a-9f7b-d619c8e6ab1b")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -242,13 +242,13 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4b2cc4f0-9b14-4f91-9862-35539c8b8d35")
-		(at 134.64 113.94)
+		(at 126.83 113.81 180)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=5.08mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Vertical pin pitch 5.08mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R3"
-			(at 2.54 -2.37 0)
+			(at 2.565 -0.82 0)
 			(layer "F.SilkS")
-			(uuid "10217205-9a16-4e57-8525-356fa836469a")
+			(uuid "67440952-4136-43e0-bc9d-b0a94056c737")
 			(effects
 				(font
 					(size 1 1)
@@ -257,9 +257,9 @@
 			)
 		)
 		(property "Value" "2.2M"
-			(at 2.54 2.37 0)
+			(at 2.645 0.77 0)
 			(layer "F.Fab")
-			(uuid "b89db2e1-d990-42e8-9c7b-2faea96072e9")
+			(uuid "a8c00fcc-e00f-4817-b168-caf094981439")
 			(effects
 				(font
 					(size 1 1)
@@ -271,7 +271,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aae1fab8-da8a-4063-8e64-5e0443394cfe")
+			(uuid "ff59bc04-01a2-4885-aad2-10b4e7630fa8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -283,7 +283,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fba1120b-1f5c-436a-91f4-512dbe80d3c8")
+			(uuid "1adaffeb-601c-4d91-ae8b-cd202c4f15ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -350,7 +350,7 @@
 			(uuid "c578fba7-375f-4455-91b6-1d3eb9539842")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 -2.37 0)
+			(at 2.565 -0.82 0)
 			(layer "F.Fab")
 			(uuid "44bfe164-b82f-43b8-bb43-2c77ecbb7adc")
 			(effects
@@ -361,7 +361,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 180)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -371,7 +371,7 @@
 			(uuid "be4b3d27-579d-4cb4-ac3e-4dbd880ffacf")
 		)
 		(pad "2" thru_hole circle
-			(at 5.08 0)
+			(at 5.08 0 180)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -396,11 +396,11 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "5a28491a-9b05-4f8e-8cd9-3355937c26dc")
-		(at 125.73 101.86)
+		(at 100.78 101.18)
 		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J1"
-			(at 0 -2.38 0)
+			(at -0.14 15.46 0)
 			(layer "F.SilkS")
 			(uuid "ed6060b9-8142-4852-a066-ca8a07feec96")
 			(effects
@@ -411,7 +411,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06_Pin"
-			(at -0.5 19.08 0)
+			(at -3 7.69 270)
 			(layer "F.Fab")
 			(uuid "dd9dc4a5-cdd1-419a-a8b3-b825debddfd0")
 			(effects
@@ -571,17 +571,6 @@
 			(layer "F.Fab")
 			(uuid "dcf3a763-2cfa-4f11-836a-aa1521406a56")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 6.35 90)
-			(layer "F.Fab")
-			(uuid "67420f93-ff01-4dab-84cb-677c55cae202")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" thru_hole rect
 			(at 0 0)
 			(size 1.7 1.7)
@@ -664,11 +653,11 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "5d53c1cd-a438-40dd-a0d4-d90272e3ac9c")
-		(at 125.71 89.74)
+		(at 116.08 98.66 90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C1"
-			(at 1 -3.75 0)
+			(at 1.09 -1.59 90)
 			(layer "F.SilkS")
 			(uuid "381ae2e3-85ef-4c90-a3b8-dbff0dc65302")
 			(effects
@@ -679,7 +668,7 @@
 			)
 		)
 		(property "Value" ".1uF"
-			(at 1 3.75 0)
+			(at 1.02 1.53 90)
 			(layer "F.Fab")
 			(uuid "dbfdaa44-397f-4260-9221-e51ea89012a7")
 			(effects
@@ -690,7 +679,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d398f1cd-e8b9-4cd8-9125-abfa7b22d144")
@@ -702,7 +691,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "62cb4601-d0d3-4fe9-b4e8-feed3fb59fb9")
@@ -752,7 +741,7 @@
 			(uuid "69e45851-d4fd-4a2a-8a72-a0debb78190d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "e096c34f-cf4b-4371-b020-e632ed1d2a33")
 			(effects
@@ -763,7 +752,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -773,7 +762,7 @@
 			(uuid "d644c4ab-9019-4446-80d6-a16e31c313fa")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -798,11 +787,11 @@
 	(footprint "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "678fdcd3-282d-4473-991c-5d5cc8fb2a39")
-		(at 143.84 107.94)
+		(at 115.65 111.4)
 		(descr "Terminal Block Xinya XY308-2.54-2P, 2 pins, pitch 2.54mm, size 5.58x6.5mm, drill diameter 1.2mm, pad diameter 2mm, http://www.xinyaelectronic.com/product/xy308-254, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Xinya")
 		(tags "THT Terminal Block Xinya XY308-2.54-2P pitch 2.54mm size 5.58x6.5mm drill 1.2mm pad 2mm")
 		(property "Reference" "BT1"
-			(at 1.27 -4.22 0)
+			(at 1.34 -2.3 0)
 			(layer "F.SilkS")
 			(uuid "976a1fbc-3da3-4496-8b6a-03bfb60b4a6a")
 			(effects
@@ -813,7 +802,7 @@
 			)
 		)
 		(property "Value" "Sys pin on charging module"
-			(at 1.27 4.52 0)
+			(at 1.82 7.75 0)
 			(layer "F.Fab")
 			(uuid "2fd6cdcb-4a0a-46ee-828b-d6665b2a6cbb")
 			(effects
@@ -1146,12 +1135,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "860d905e-47f2-4f85-abef-33b8604ac540")
-		(at 134.49 101.69)
+		(at 115.02 105.55)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D1"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "fae6e131-5f13-4ad1-bcf4-aa060579e9a0")
 			(effects
 				(font
@@ -1405,13 +1395,13 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "8801c12e-4626-4f6d-a072-18d910f424c0")
-		(at 138.81 96.29)
+		(at 121.89 88.01 -90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C6"
-			(at 1 -3.75 0)
+			(at 0.86 -1.6 90)
 			(layer "F.SilkS")
-			(uuid "410cd915-6de8-4004-83bb-b8a053a2ea96")
+			(uuid "e6a5164b-0b92-4d16-8bae-674585118d94")
 			(effects
 				(font
 					(size 1 1)
@@ -1420,9 +1410,9 @@
 			)
 		)
 		(property "Value" "1000uF"
-			(at 1 3.75 0)
+			(at 0.93 1.68 90)
 			(layer "F.Fab")
-			(uuid "dd79a254-6678-4584-8ab3-9f58cbc84a22")
+			(uuid "ed5158e1-4c05-4cf4-9db0-294ebdbf9625")
 			(effects
 				(font
 					(size 1 1)
@@ -1431,10 +1421,10 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "558ddce1-5c3f-45d8-8634-d13c2e5ed4e2")
+			(uuid "ef02f796-86a9-43e4-97c8-e537123e861c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1443,10 +1433,10 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b2821166-50f7-4972-ad82-0d72fc406d6c")
+			(uuid "5a7325e1-57ec-4aae-b51c-0f6c9d59cf3b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,7 +1483,7 @@
 			(uuid "8122ad3f-e0c0-4560-a275-f8f27c00f283")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "516f580b-6e82-4657-a094-60be95da3712")
 			(effects
@@ -1504,7 +1494,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1514,7 +1504,7 @@
 			(uuid "d0c677a4-1bb4-4baa-8fd4-0e34fe901ec1")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1539,13 +1529,13 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "8c24accb-09d5-4fe8-842d-f1e4b004bb31")
-		(at 125.71 96.29)
+		(at 121.8 99.8 -90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C2"
-			(at 1 -3.75 0)
+			(at 1 -3.75 90)
 			(layer "F.SilkS")
-			(uuid "540b9893-c11b-478a-b07d-d12806dd1708")
+			(uuid "ecdef5c4-0e42-4c45-a83a-0d340380a7e8")
 			(effects
 				(font
 					(size 1 1)
@@ -1554,9 +1544,9 @@
 			)
 		)
 		(property "Value" "1000uF"
-			(at 1 3.75 0)
+			(at 0.93 -1.45 90)
 			(layer "F.Fab")
-			(uuid "8b693423-e87b-4866-aeb5-dce0b30fd995")
+			(uuid "be215f0c-b040-4e05-93aa-9d4c202089b5")
 			(effects
 				(font
 					(size 1 1)
@@ -1565,10 +1555,10 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8aa0906f-8e98-4c90-9e22-08a01a457ebc")
+			(uuid "c14e52d1-0be6-478d-a7e6-ef1b26f29819")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,10 +1567,10 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "324f8bc6-81a5-4557-af0a-15f4a221614b")
+			(uuid "a550a1be-edc3-4ec5-ad36-136eb06863fb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1627,7 +1617,7 @@
 			(uuid "c5b25fb2-7266-4da9-89ed-1d1a9c4f2e0e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "b580bdb3-c387-4daf-9931-0e405e71be11")
 			(effects
@@ -1638,7 +1628,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1648,7 +1638,7 @@
 			(uuid "ac81ca5a-4b9f-4660-90c2-e0aac69eba01")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1673,11 +1663,11 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "9e7bbf40-ee8b-49ea-ae2d-c23430dc6283")
-		(at 132.26 96.29)
+		(at 122.07 82.3 -90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C4"
-			(at 1 -3.75 0)
+			(at 1.24 -1.6 90)
 			(layer "F.SilkS")
 			(uuid "0ef8768a-420c-4809-af85-f758dc690510")
 			(effects
@@ -1688,7 +1678,7 @@
 			)
 		)
 		(property "Value" ".1uF"
-			(at 1 3.75 0)
+			(at 1.09 1.6 90)
 			(layer "F.Fab")
 			(uuid "01f077f8-0584-479f-b60c-af146d0a987f")
 			(effects
@@ -1699,7 +1689,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4b9053df-4428-4f36-922d-cb7be39df92b")
@@ -1711,7 +1701,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5adbd884-0e82-452d-85c8-bdc1df7387d3")
@@ -1761,7 +1751,7 @@
 			(uuid "e76cbad9-b320-4778-a180-d7526cdb45f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "a03dfe1d-0919-4517-99b8-69becd385961")
 			(effects
@@ -1772,7 +1762,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1782,7 +1772,7 @@
 			(uuid "0aa6d318-c78c-4677-a8e1-41364a64c688")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1807,13 +1797,13 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ac8b3f07-8446-4f83-868d-05c4e91011af")
-		(at 134.64 105.84)
+		(at 100.86 86.055 90)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=5.08mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Vertical pin pitch 5.08mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R1"
-			(at 2.54 -2.37 0)
+			(at 3.095 -0.78 90)
 			(layer "F.SilkS")
-			(uuid "952ff7a3-126f-4b26-908c-1b32f7068060")
+			(uuid "0806ad31-a38a-483b-bc5d-4ae2f9b6cb5f")
 			(effects
 				(font
 					(size 1 1)
@@ -1822,9 +1812,9 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 2.54 2.37 0)
+			(at 2.935 0.94 90)
 			(layer "F.Fab")
-			(uuid "d7850c88-8505-4180-a3fa-49d3b868a388")
+			(uuid "b00e7d18-0915-4ae3-a3b8-18f4f01e8bac")
 			(effects
 				(font
 					(size 1 1)
@@ -1833,10 +1823,10 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a5dfac8e-863b-44a7-9edb-47e1fd93001b")
+			(uuid "2ddc4877-3532-4fb1-bac2-e1840a9d8f76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1845,10 +1835,10 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19dd4179-0348-427e-aa0f-5285d96e472d")
+			(uuid "3a33ab4a-2f4e-4a96-a5fd-c91a74a041b4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,7 +1905,7 @@
 			(uuid "1ebce771-0374-4b60-a325-852ef7692bbc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 -2.37 0)
+			(at 3.095 -0.78 90)
 			(layer "F.Fab")
 			(uuid "e7f4a4e0-ce2b-4fa5-95bc-6589a6df1a90")
 			(effects
@@ -1926,7 +1916,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1936,7 +1926,7 @@
 			(uuid "f4b8566e-0f0c-4d8a-882c-c802f7623eec")
 		)
 		(pad "2" thru_hole circle
-			(at 5.08 0)
+			(at 5.08 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -1961,11 +1951,11 @@
 	(footprint "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
 		(layer "F.Cu")
 		(uuid "da36d130-f49f-4ebe-8070-c380267c60a0")
-		(at 132.26 89.74)
+		(at 99.99 94.95 -90)
 		(descr "C, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=11mm, Non-Polar Electrolytic Capacitor")
 		(tags "C Radial series Radial pin pitch 2.00mm diameter 5mm height 11mm Non-Polar Electrolytic Capacitor")
 		(property "Reference" "C3"
-			(at 1 -3.75 0)
+			(at 1.08 -1.65 90)
 			(layer "F.SilkS")
 			(uuid "a3e56d67-14fc-43a2-81a7-386c3264ec7f")
 			(effects
@@ -1976,7 +1966,7 @@
 			)
 		)
 		(property "Value" ".1uF"
-			(at 1 3.75 0)
+			(at 1.08 1.57 90)
 			(layer "F.Fab")
 			(uuid "31fcf925-bbec-411c-ac46-6b4998164e30")
 			(effects
@@ -1987,7 +1977,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f754e8dc-c054-44d0-bb87-d1ec620e3897")
@@ -1999,7 +1989,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "593ed02b-936d-4206-902e-c32bbfb90364")
@@ -2049,7 +2039,7 @@
 			(uuid "6667ac0e-7ee3-47c3-a8f8-461d49f10ef9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1 0 0)
+			(at 1 0 90)
 			(layer "F.Fab")
 			(uuid "6780b6e2-edb0-4237-b99c-5df98cc291df")
 			(effects
@@ -2060,7 +2050,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -2070,7 +2060,7 @@
 			(uuid "77ee0887-940c-4f28-9872-2e887a3f0053")
 		)
 		(pad "2" thru_hole circle
-			(at 2 0)
+			(at 2 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -2095,10 +2085,10 @@
 	(footprint "390B_Footprint_Library:28P3_SPDIP28_SP_MCH"
 		(layer "F.Cu")
 		(uuid "e7f8a09b-a964-410f-92a8-69d7a2a50eb1")
-		(at 111.6 83.57)
+		(at 104.17 80.84)
 		(tags "ATMEGA328-PU ")
 		(property "Reference" "U1"
-			(at 3.81 16.51 0)
+			(at 3.81 16.51 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9d20013e-ae5c-4dd2-b395-a01157a8a2a2")
@@ -2110,7 +2100,7 @@
 			)
 		)
 		(property "Value" "ATMEGA328-PU"
-			(at 3.81 16.51 0)
+			(at 3.77 6.23 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9992fa09-48df-4691-8396-9c7a62243194")
@@ -3808,7 +3798,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 16.51 0)
+			(at 3.81 16.51 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "ffbfcbe1-ab5f-4b7e-8356-c99a43de5d65")
@@ -4132,11 +4122,11 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f6c86d25-e962-4a43-a9e4-9a4c1f0a36fa")
-		(at 134.64 109.89)
+		(at 122.315 109.3)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=5.08mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Vertical pin pitch 5.08mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R2"
-			(at 2.54 -2.37 0)
+			(at 2.575 -0.69 0)
 			(layer "F.SilkS")
 			(uuid "f8ec9364-5fd7-45c9-94bc-43f345f7d4ff")
 			(effects
@@ -4147,7 +4137,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 2.54 2.37 0)
+			(at 2.575 0.82 0)
 			(layer "F.Fab")
 			(uuid "33239b3a-12fe-4c78-ad62-3d8219e4d290")
 			(effects
@@ -4240,7 +4230,7 @@
 			(uuid "495a0a8c-744d-47b2-8a2f-d21985321bce")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 -2.37 0)
+			(at 2.575 -0.69 0)
 			(layer "F.Fab")
 			(uuid "0f01a454-48b7-4dc7-99e4-fb890c85120a")
 			(effects
@@ -4286,7 +4276,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "fdf67479-0305-49fb-8759-5a346cf0e860")
-		(at 130.32 101.86)
+		(at 115.08 82.95)
 		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x05 2.54mm single row")
 		(property "Reference" "J3"
@@ -4301,7 +4291,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 0 12.54 0)
+			(at 2.91 5.06 90)
 			(layer "F.Fab")
 			(uuid "d7663228-dbea-4511-850a-d5bc11fdc8b4")
 			(effects
