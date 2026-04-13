@@ -20,14 +20,14 @@ void loop() {
   Serial.println(lightValue1); // Display value on Serial Monitor
   Serial.print("Light Level P2: ");
   Serial.println(lightValue2); // Display value on Serial Monitor
-  delay(1); // Wait 500ms between readings
+  delay(100); // Wait 500ms between readings
   Serial.println();
 
   // compare the light level of the two photoresistors
   // If they are almost the same, do not adjust servo
   // If one is less than the other, adjust servo to even out the readings.
 
-  if(abs(lightValue1 - lightValue2) > 30){   // if not close in light level
+  if(abs(lightValue1 - lightValue2) > 60){   // if not close in light level
     // adjust
     if(lightValue1 - lightValue2 > 0){  // if resistor 1 has more light than resistor 2
       angle = angle + 1;
