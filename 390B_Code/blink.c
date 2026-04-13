@@ -15,7 +15,7 @@
  // __________ preamble __________
  #include <avr/io.h>            // Defines port pins
  #include <util/delay.h>        // Declares _delay_ms
- #define MYDELAY 100           // This will be the delay in msec
+ #define MYDELAY 500           // This will be the delay in msec
  
  int main(void){
 
