@@ -1,44 +1,69 @@
+/*
+390B Solar
+Tracking logic with photoresistors
+
+This file should contain the full tracking logic, but not the battery logic
+
+*/
+
+
 #include <avr/io.h>            // Defines port pins
 #include <util/delay.h>        // Declares _delay_ms
+#include <stdlib.h> // For abs()
+#include <stdint.h>
 #define F_CPU 1000000UL
 
 
+
+int THRESHOLD = 80;
+
 void init_servos();
+void adc_init();
+uint16_t adc_read(uint8_t ch);
+
+void down();
+void up();
+void left();
+void right();
 
 
 int main(void){
     init_servos();
-
-    
-
     while(1){
-        // bounds for OCR1A is roughly 100 to 300
-        // bounds for OCR1B is roughly 150 to 260
-        
-        // int i;
-        // for(i = 200; i < 260; i++){
-        //     OCR1B = i;   
-        //     _delay_ms(50);     
-        // }
+        // ********************************************
+        // bounds for OCR1A is roughly 100 to 300       (Swivel servo)
+        // bounds for OCR1B is roughly 150 to 260       (Pitch servo)
+        // This is the angle control for each
+        // ********************************************
 
-        int j;
-        for(j = 260; j > 150; j--){
-            OCR1B = j;   
-            _delay_ms(50);
+        int light0 = adc_read(0);   // top left (A0)
+        int light1 = adc_read(1);   // top right (A1)
+        int light2 = adc_read(2);   // bottom left (A2)
+        int light3 = adc_read(3);   // bottom right (A3)
+
+
+        // check to move up/down
+        if(abs((light0 + light1) - (light2 + light3)) > THRESHOLD){     // First check is the pairs of photoresistors are close in light level
+            if( ((light0 + light1) - (light2 + light3)) < 0 ){      // Then check whether top or bottom has more light
+                up();       // if top has less light, then tilt up to catch more sun
+            } else {
+                down();     // if bottom has less light, then tilt down to catch more sun
+            }
         }
 
-        // OCR1A
-        // for(int i = 100; i < 300; i++){
-        //     OCR1A = i;   
-        //     _delay_ms(50);     
-        // }
+        // check to move left/right
+        if(abs((light0 + light2) - (light1 + light3)) > 80){        // First check if left/right photoresistors are close in light level
+            if( ((light0 + light2) - (light1 + light3)) < 0){       // check if left/right resistors has more light
+                left();     // if left has less light, move left
+            } else {
+                right();    // if right has less light, move right
+            }
+        }
 
-        // for(int j = 300; j > 100; j--){
-        //     OCR1A = j;   
-        //     _delay_ms(50);
-        // }
     }
 }
+
+
 
 void init_servos(){
     // Initialize PB1 and PB2 as servo pin outputs
@@ -59,9 +84,61 @@ void init_servos(){
 
     // start with 1.5ms pulse (should be 90 degrees)
     OCR1A = 195;    // This is ~ 90 degrees     (swivel motor)
-    OCR1B = 150;    // 0 - 255  8-bit
+    OCR1B = 150;
 
     // set prescalar to 8 and start the timer
     TCCR1B |= (1 << CS11);
 
+}
+
+
+void adc_init() {
+    // AVCC with external capacitor at AREF pin <------ CHECK WHAT THIS ACTUALLY MEANS
+    ADMUX = (1 << REFS0);
+
+    // Enable ADC and set prescalar to 8
+    ADCSRA = (1 << ADEN) | (1 << ADPS1) | (1 << ADPS0);
+}
+
+// Read a specific ADC channel (0 to 7)
+uint16_t adc_read(uint8_t ch) {
+    ch &= 0b00000111;            // Keep only the lowest 3 bits
+    ADMUX = (ADMUX & 0xF8) | ch; // Clear previous channel, set new one
+    ADCSRA |= (1 << ADSC);       // Start the conversion
+    
+    while (ADCSRA & (1 << ADSC)); // Wait for conversion to complete
+    
+    return ADC; // Return the 10-bit result (0-1023)
+}
+
+
+// bounds for OCR1A is roughly 100 to 300       (Swivel servo)
+// bounds for OCR1B is roughly 150 to 260       (Pitch servo)
+// CHECK IF UP/DOWN/LEFT/RIGHT ACTUALLY DOES THE THING IT SAYS
+void down(){
+    OCR1B = OCR1B - 1;
+    if(OCR1B < 150){
+        OCR1B = 150;
+    }
+}
+
+void up(){
+    OCR1B = OCR1B + 1;
+    if(OCR1B > 260){
+        OCR1B = 260;
+    }
+}
+
+void left(){
+    OCR1A = OCR1A - 1;
+    if(OCR1A < 100){
+        OCR1A = 100;
+    }
+}
+
+void right(){
+    OCR1A = OCR1A + 1;
+    if(OCR1A > 300){
+        OCR1A = 300;
+    }
 }
