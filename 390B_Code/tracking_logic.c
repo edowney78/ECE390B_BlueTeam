@@ -15,7 +15,9 @@ This file should contain the full tracking logic, but not the battery logic
 
 
 
-int THRESHOLD = 80;
+int THRESHOLD = 60;
+int swivelVal = 200;
+int pitchVal = 150;
 
 void init_servos();
 void adc_init();
@@ -29,6 +31,7 @@ void right();
 
 int main(void){
     init_servos();
+    adc_init();
     while(1){
         // ********************************************
         // bounds for OCR1A is roughly 100 to 300       (Swivel servo)
@@ -52,7 +55,7 @@ int main(void){
         }
 
         // check to move left/right
-        if(abs((light0 + light2) - (light1 + light3)) > 80){        // First check if left/right photoresistors are close in light level
+        if(abs((light0 + light2) - (light1 + light3)) > THRESHOLD){        // First check if left/right photoresistors are close in light level
             if( ((light0 + light2) - (light1 + light3)) < 0){       // check if left/right resistors has more light
                 left();     // if left has less light, move left
             } else {
@@ -60,6 +63,7 @@ int main(void){
             }
         }
 
+        _delay_ms(100);
     }
 }
 
@@ -83,7 +87,7 @@ void init_servos(){
     ICR1 = 2499;
 
     // start with 1.5ms pulse (should be 90 degrees)
-    OCR1A = 195;    // This is ~ 90 degrees     (swivel motor)
+    OCR1A = 200;    // This is ~ 90 degrees     (swivel motor)
     OCR1B = 150;
 
     // set prescalar to 8 and start the timer
@@ -116,29 +120,33 @@ uint16_t adc_read(uint8_t ch) {
 // bounds for OCR1B is roughly 150 to 260       (Pitch servo)
 // CHECK IF UP/DOWN/LEFT/RIGHT ACTUALLY DOES THE THING IT SAYS
 void down(){
-    OCR1B = OCR1B - 1;
-    if(OCR1B < 150){
-        OCR1B = 150;
+    pitchVal = pitchVal + 1;
+    if(pitchVal > 260){
+        pitchVal = 260;
     }
+    OCR1B = pitchVal;
 }
 
 void up(){
-    OCR1B = OCR1B + 1;
-    if(OCR1B > 260){
-        OCR1B = 260;
+    pitchVal = pitchVal - 1;
+    if(pitchVal < 150){
+        pitchVal = 150;
     }
+    OCR1B = pitchVal;
 }
 
 void left(){
-    OCR1A = OCR1A - 1;
-    if(OCR1A < 100){
-        OCR1A = 100;
+    swivelVal = swivelVal - 1;
+    if(swivelVal < 100){
+        swivelVal = 100;
     }
+    OCR1A = swivelVal;
 }
 
 void right(){
-    OCR1A = OCR1A + 1;
-    if(OCR1A > 300){
-        OCR1A = 300;
+    swivelVal = swivelVal + 1;
+    if(swivelVal > 300){
+        swivelVal = 300;
     }
+    OCR1A = swivelVal;
 }
