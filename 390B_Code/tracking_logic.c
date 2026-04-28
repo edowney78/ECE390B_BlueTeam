@@ -32,6 +32,7 @@ void right();
 int main(void){
     init_servos();
     adc_init();
+
     while(1){
         // ********************************************
         // bounds for OCR1A is roughly 100 to 300       (Swivel servo)
@@ -106,8 +107,8 @@ void adc_init() {
 
 // Read a specific ADC channel (0 to 7)
 uint16_t adc_read(uint8_t ch) {
-    ch &= 0b00000111;            // Keep only the lowest 3 bits
-    ADMUX = (ADMUX & 0xF8) | ch; // Clear previous channel, set new one
+    ch &= 0b00000111;               // Keep only the lowest 3 bits
+    ADMUX = (ADMUX & 0xF8) | ch;    // Clear previous channel, set new one
     ADCSRA |= (1 << ADSC);       // Start the conversion
     
     while (ADCSRA & (1 << ADSC)); // Wait for conversion to complete
@@ -118,7 +119,7 @@ uint16_t adc_read(uint8_t ch) {
 
 // bounds for OCR1A is roughly 100 to 300       (Swivel servo)
 // bounds for OCR1B is roughly 150 to 260       (Pitch servo)
-// CHECK IF UP/DOWN/LEFT/RIGHT ACTUALLY DOES THE THING IT SAYS
+
 void down(){
     pitchVal = pitchVal + 1;
     if(pitchVal > 260){
